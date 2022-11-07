@@ -203,7 +203,7 @@
       </section>
     </main>
 
-          <footer class="footer">
+              <footer class="footer">
       <section class="">
         <div class="container container-footer">
           <div class="container-addres">
@@ -233,7 +233,7 @@
             </address>
           </div>
           <div class="footer-social">
-            <h2 class="footer-social-title">приєднуйтесь</h2>
+            <p class="footer-social-title">приєднуйтесь</p>
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="footer-social-link" href="">
@@ -265,9 +265,111 @@
               </li>
             </ul>
           </div>
+          <div class="footer-spam">
+          <p class="footer-spam-title">Підпишіться на розсилку</p>
+          <form action="">
+            <label for="">
+              <span class="footer-spam-span">
+                <input
+                type="mail"
+                class="footer-spam-mail"
+                name="mail-spam"
+                placeholder="E-mail"
+                />
+              </span>
+            </label>
+          </form>
+        </div>
+        <div class="footer-button">
+          <button class="footer-btn" type="submit"> 
+            Підписатися
+            <span>
+              <svg class="footer-icon-send" width="24" height="24">
+                <use href="./images/спрайти/symbol-defs.svg#icon-send"></use>
+            </svg>
+            </span>
+          </button>
+        </div>
         </div>
       </section>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form action="">
+          <label for="">
+            <span class="modal-label-text">Ім'я</span>
+            <span class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/спрайти/symbol-defs.svg#icon-person-black"></use>
+              </svg>
+            </span>
+          </label>
+          <span class="modal-label-text">Телефон</span>
+            <span class="input-wrap">
+              <input
+                type="tel"
+                class="modal-input"
+                name="tel-modal"
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/спрайти/symbol-defs.svg#icon-phone-black"></use>
+              </svg>
+            </span>
+          </label>
+          <span class="modal-label-text">Пошта</span>
+            <span class="input-wrap">
+              <input
+                type="email"
+                class="modal-input"
+                name="mail"
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/спрайти/symbol-defs.svg#icon-email-black"></use>
+              </svg>
+            </span>
+          <div class="modal-field">
+            <label for="user-text" class="modal-label">Коментар</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-comment border-comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div class="modal-checkbox">
+            <input
+              type="checkbox"
+              class="input-check visually-hidden"
+              name="privacy-modal"
+              value="true"
+              id="privacy"
+            />
+            <label for="privacy" class="check-text" style="display: flex;">
+              <span>
+                <svg class="check-icon" width="16" height="16">
+                  <use href="./images/спрайти/symbol-defs.svg#Vector"></use>
+                </svg>
+              </span><p class="check-txt-privacy">Погоджуюся з розсилкою та приймаю <p class="check-txt-privacy-link">Умови договору</p></p>
+              </label>
+          </div>
+          <button class="modal-btn-send" type="submit">Відправити</button>
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="./images/спрайти/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
