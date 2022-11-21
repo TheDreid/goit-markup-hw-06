@@ -265,22 +265,28 @@
               </li>
             </ul>
           </div>
-          <div class="footer-spam">
-          <p class="footer-spam-title">Підпишіться на розсилку</p>
-          <form action="">
-            <label for="">
-              <span class="footer-spam-span">
-                <input
-                type="mail"
-                class="footer-spam-mail"
-                name="mail-spam"
-                placeholder="E-mail"
-                />
-              </span>
-            </label>
+
+
+          <!-- <div class="footer-newsletter">
+          <p class="footer-newsletter-text">Підпишіться на розсилку</p>
+          <form class="footer-newsletter-form">
+            <input
+              class="footer-newsletter-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="footer-newsletter-btn" type="submit">Підписатися
+              <svg class="footer-newsletter-icon" width="24" height="24">
+                <use href="./images/спрайти/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
-        </div>
-        <div class="footer-button">
+        </div> -->
+
+        <div class="footer-spam">
+          <p class="footer-spam-title">Підпишіться на розсилку</p>
+          <form action="" style="display: flex;flex-direction: row-reverse;">           
           <button class="footer-btn" type="submit"> 
             Підписатися
             <span>
@@ -289,15 +295,17 @@
             </svg>
             </span>
           </button>
+          <input type="mail" class="footer-spam-mail" name="mail-spam" placeholder="E-mail"></form>
         </div>
-        </div>
+
+
       </section>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form action="">
-          <label for="">
+          <label for="" class="label">
             <span class="modal-label-text">Ім'я</span>
             <span class="input-wrap">
               <input
@@ -311,7 +319,8 @@
               </svg>
             </span>
           </label>
-          <span class="modal-label-text">Телефон</span>
+          <label for="" class="label">
+            <span class="modal-label-text">Телефон</span>
             <span class="input-wrap">
               <input
                 type="tel"
@@ -324,7 +333,8 @@
               </svg>
             </span>
           </label>
-          <span class="modal-label-text">Пошта</span>
+          <label for="" class="label">
+            <span class="modal-label-mail">Пошта</span>
             <span class="input-wrap">
               <input
                 type="email"
@@ -336,7 +346,9 @@
                 <use href="./images/спрайти/symbol-defs.svg#icon-email-black"></use>
               </svg>
             </span>
-          <div class="modal-field">
+          </label>
+          <label for="" class="label">
+             <div class="modal-field">
             <label for="user-text" class="modal-label">Коментар</label>
             <textarea
               name="user-text"
@@ -345,6 +357,7 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
+          </label>
           <div class="modal-checkbox">
             <input
               type="checkbox"
